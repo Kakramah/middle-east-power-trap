@@ -3,352 +3,363 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كيف وقعت إيران في الشباك الأمريكية</title>
-  <meta name="description" content="حين يمدّ لك أحد الحبل طويلاً، لا يفعل ذلك دائماً لينقذك. قراءة في منطق التمدد والانكشاف في السياسة الإقليمية.">
+  <title>كيف وقعت إيران في الشباك الأمريكية · قراءة تحليلية</title>
+  <meta name="description" content="حين يمدّ لك أحد الحبل طويلاً، لا يفعل ذلك دائماً لينقذك. قراءة تحليلية في منطق التمدد الإيراني، وكيف صار النفوذ الإقليمي انكشافاً منظّماً.">
   <meta name="author" content="𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓴𝓻𝓪𝓶𝓪𝓱">
   <meta property="og:title" content="كيف وقعت إيران في الشباك الأمريكية">
-  <meta property="og:description" content="حين يمدّ لك أحد الحبل طويلاً، لا يفعل ذلك دائماً لينقذك.">
+  <meta property="og:description" content="حين يمدّ لك أحد الحبل طويلاً، لا يفعل ذلك دائماً لينقذك. قراءة في منطق التمدد والانكشاف.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://kakramah.github.io/middle-east-power-trap/images/hero.jpg">
+  <meta property="og:image" content="https://kakramah.github.io/middle-east-power-trap/images/og-card.jpg">
   <meta property="og:url" content="https://kakramah.github.io/middle-east-power-trap/">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="images/eagle-emblem-metal.svg">
+  <link rel="preload" href="fonts/IBMPlexSansArabic-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/IBMPlexSansArabic-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- شريط التقدم -->
-  <div id="progress-bar" role="progressbar" aria-label="تقدم القراءة"></div>
+  <a class="skip-link" href="#intro">انتقل إلى النص</a>
 
-  <!-- التنقل -->
-  <nav id="site-nav" aria-label="تنقل رئيسي">
-    <img
-      src="images/eagle-emblem-metal.svg"
-      alt="شعار خلدون عكرمة"
-      class="nav-eagle"
-      width="56"
-      height="43"
-    >
-    <span class="nav-tag">تحليل استراتيجي · 2026</span>
+  <!-- شريط التقدم: حبل يُمدّ مع القراءة -->
+  <div class="rope-progress" aria-hidden="true"><span id="rope-progress-fill"></span></div>
+
+  <!-- الترويسة -->
+  <nav class="site-nav" id="site-nav" aria-label="التنقل الرئيسي">
+    <a class="nav-brand" href="#top" aria-label="العودة إلى أعلى الصفحة">
+      <img src="images/eagle-emblem-metal.svg" alt="شعار خلدون عكرمة" width="44" height="33">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#intro">المدخل</a></li>
+      <li><a href="#long-rope">الحبل الطويل</a></li>
+      <li><a href="#peak">ذروة التمدد</a></li>
+      <li><a href="#network">خريطة النفوذ</a></li>
+      <li><a href="#reversal">انقلاب المعادلة</a></li>
+      <li><a href="#method">المنهج والمصادر</a></li>
+    </ul>
   </nav>
 
-  <!-- الافتتاحية -->
-  <header id="hero" role="banner">
-    <img
-      src="images/hero.jpg"
-      alt="حبل ممتد على خلفية داكنة، تصوّر بصري لفكرة إمداد الحبل"
-      class="hero-bg"
-      width="1400"
-      height="788"
-      data-title="الحبل الممدود"
-      data-desc="سلسلة من الألياف المجدولة الممتدة عبر الظلام، رمزية السياسة التي تمنح الوهم بالاتساع."
-    >
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-content">
-      <p class="hero-kicker">قراءة في السياسة الإقليمية</p>
-      <h1 class="hero-title">
-        كيف وقعت <em>إيران</em> في الشباك الأمريكية
-      </h1>
-      <p class="hero-subtitle">
-        حين يمدّ لك أحد الحبل طويلاً، لا يفعل ذلك دائماً لينقذك.
-        قد يأتي يوم تكتشف فيه أن الحبل نفسه أصبح يلتف حول عنقك.
-      </p>
-      <button class="hero-scroll" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})" aria-label="انتقل إلى المحتوى">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="12" y1="5" x2="12" y2="19"></line>
-          <polyline points="19 12 12 19 5 12"></polyline>
-        </svg>
-        اقرأ التحليل
-      </button>
+  <!-- الغلاف -->
+  <header class="hero" id="top">
+    <div class="hero-media" aria-hidden="true">
+      <img src="images/hero.jpg" alt="" width="1376" height="768" fetchpriority="high">
     </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-tag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>
+        تحليل استراتيجي
+      </p>
+      <p class="hero-trail"><span>السياسة الإقليمية</span><span aria-hidden="true">/</span><span>قراءة</span></p>
+      <h1>كيف وقعت إيران في الشباك الأمريكية</h1>
+      <div class="hero-meta">
+        <span>2026</span>
+        <a class="hero-share" href="#share">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          مشاركة
+        </a>
+      </div>
+      <p class="hero-caption">تصوّر بصري · حبل ممدود في العتمة</p>
+    </div>
+    <a class="hero-scroll" href="#intro" aria-label="انزل إلى المدخل"><span></span></a>
   </header>
 
-  <main id="main-content">
+  <main>
 
-    <!-- المقدمة -->
-    <section id="intro" aria-labelledby="intro-heading">
-      <h2 id="intro-heading" class="sr-only">مقدمة</h2>
-      <p class="intro-text reveal">
-        علّمتنا السياسة الأمريكية أن واشنطن قد تترك الحبل طويلاً لبعض القوى الإقليمية،
-        فتتمدد وتتوغل وتعتقد أنها أصبحت قوة لا تُمسّ، ما دام ذلك لا يتعارض مع المصالح الأمريكية.
-        ثم تتغير الحسابات، <strong>فيتحول ذلك التمدد نفسه إلى عبء ونقطة ضعف.</strong>
-      </p>
+    <!-- المدخل -->
+    <section class="column intro" id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading" class="sr-only">المدخل</h2>
+      <p class="lead reveal">حين يمدّ لك أحد الحبل طويلاً، لا يفعل ذلك دائماً لينقذك. قد يأتي يوم تكتشف فيه أن الحبل نفسه أصبح يلتف حول عنقك.</p>
+      <p class="reveal">علّمتنا السياسة الأمريكية أن واشنطن قد تترك الحبل طويلاً لبعض القوى الإقليمية، فتتمدد وتتوغل وتعتقد أنها أصبحت قوة لا تُمسّ، ما دام ذلك لا يتعارض مع المصالح الأمريكية. ثم تتغير الحسابات، فيتحول ذلك التمدد نفسه إلى عبء ونقطة ضعف.</p>
     </section>
 
-    <!-- المشاهد -->
-    <section class="scene-section" aria-label="مشاهد التحليل">
-
-      <!-- المشهد الأول: الإغراء -->
-      <article class="scene-block reveal" aria-labelledby="scene1-heading">
-        <div class="scene-image-wrap">
-          <img
-            src="images/slide-01.jpg"
-            alt="تصوّر بصري: يد تمسك حبلاً مرتخياً في مساحة داكنة، إشارة إلى إمداد الحبل"
-            width="800"
-            height="500"
-            loading="lazy"
-            data-title="إمساك الخيوط"
-            data-desc="يد تمسك طرف الحبل بدقة وحذر في عتمة الغرفة، دلالة على هندسة المشهد الإقليمي."
-          >
-          <p class="scene-caption">تصوّر بصري · فكرة إمداد الحبل</p>
-        </div>
-        <div class="scene-text">
-          <p class="scene-num" aria-hidden="true">المشهد الأول</p>
-          <h2 id="scene1-heading" class="scene-heading">الحبل الطويل</h2>
-          <p class="scene-body">
-            لا تعمل واشنطن بعاطفة. حين تترك لقوة إقليمية هامشاً للتمدد،
-            فذلك لأن مصالح الطرفين تتقاطع مرحلياً، أو لأن هذا التمدد يشغل خصوماً مشتركين،
-            أو يثقل القوة المتمددة بأعباء لا تدركها.
-            المسافة بين الإذن الضمني والفخ المحكم أقل مما يبدو.
-          </p>
-        </div>
-      </article>
-
-      <!-- اقتباس معلّق -->
-      <blockquote class="pullquote reveal">
-        <div class="pullquote-line" aria-hidden="true"></div>
-        <p class="pullquote-text">
-          ربما تقاطعت مصالح الطرفين مرحلياً، ثم تتغير الحسابات،
-          فيتحول ذلك التمدد نفسه إلى <em>عبء ونقطة ضعف.</em>
-        </p>
-      </blockquote>
-
-      <!-- المشهد الثاني: الوهم -->
-      <article class="scene-block reverse reveal" aria-labelledby="scene2-heading">
-        <div class="scene-image-wrap">
-          <img
-            src="images/slide-02.jpg"
-            alt="تصوّر بصري: يد مفرودة فوق خريطة الشرق الأوسط، إشارة إلى وهم السيطرة الإقليمية"
-            width="800"
-            height="500"
-            loading="lazy"
-            data-title="وهم التمدد والسيطرة"
-            data-desc="حبل يمتد فوق خريطة الشرق الأوسط مخترقاً العواصم، تصوير للتوسع الإيراني في أربع دول عربية."
-          >
-          <p class="scene-caption">تصوّر بصري · وهم القبضة الإقليمية</p>
-        </div>
-        <div class="scene-text">
-          <p class="scene-num" aria-hidden="true">المشهد الثاني</p>
-          <h2 id="scene2-heading" class="scene-heading">ذروة التمدد</h2>
-          <p class="scene-body">
-            على مدى سنوات، وصل قاسم سليماني ورجاله إلى عمق سوريا وقرب الحدود،
-            وتعاظمت قوة حزب الله ونفوذه في لبنان والعراق واليمن.
-            حتى بدت طهران وكأنها تمسك بأوراق المنطقة.
-            وهذا بالضبط هو لحظة الخطر الأكبر: حين تعتقد أنك لا تُمسّ.
-          </p>
-        </div>
-      </article>
-
-      <!-- المشهد الثالث: الصدمة -->
-      <article class="scene-block reveal" aria-labelledby="scene3-heading">
-        <div class="scene-image-wrap">
-          <img
-            src="images/slide-03.jpg"
-            alt="تصوّر بصري: ملك الشطرنج ساقط على سطح داكن، دلالة على سقوط القوة الظاهرة"
-            width="800"
-            height="500"
-            loading="lazy"
-            data-title="انقلاب المشهد والسقوط"
-            data-desc="ملك شطرنج يسقط في العتمة مع اهتزاز خيوط الحبل، تجسيد لضربات سليماني ونصر الله وانهيار المنظومة."
-          >
-          <p class="scene-caption">تصوّر بصري · سقوط الملك</p>
-        </div>
-        <div class="scene-text">
-          <p class="scene-num" aria-hidden="true">المشهد الثالث</p>
-          <h2 id="scene3-heading" class="scene-heading">انقلاب المشهد</h2>
-          <p class="scene-body">
-            ثم انقلبت المعادلة. قُتل سليماني بضربة أمريكية،
-            وقُتل نصرالله وعدد كبير من قادة الحزب بضربات متتالية.
-            اليوم تجد إيران نفسها في مواجهة مباشرة، بينما تتعرض شبكة نفوذها لضربات قاسية.
-            التمدد لم يكن قوة. كان انكشافاً منظّماً.
-          </p>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- المشهد الرابع: لحظة التوقيع -->
-    <section id="finale" aria-labelledby="finale-heading">
-      <div class="finale-image-wrap reveal">
-        <img
-          src="images/slide-04.jpg"
-          alt="تصوّر بصري: حبل ملفوف على هيئة حلقة في مساحة داكنة، دلالة على الحبل الذي يلتف"
-          width="560"
-          height="315"
-          loading="lazy"
-          data-title="الحبل يلتف حول العنق"
-          data-desc="الحبل ينتهي إلى حلقة محكمة من دون مخرج، رمزية المأزق الاستراتيجي الإيراني الراهن."
-        >
+    <!-- الحبل الطويل: خلفية بطبقات تتبدّل مع كل خطوة -->
+    <section class="scrolly" id="long-rope" aria-labelledby="long-rope-heading" data-scrolly>
+      <div class="stage" aria-hidden="true">
+        <div class="stage-layer is-active" data-layer="0"><img src="images/slide-01.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-wide"></div>
+        <div class="stage-layer" data-layer="1"><img src="images/slide-01.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-hand"></div>
+        <div class="stage-layer" data-layer="2"><img src="images/slide-01.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-loop"></div>
+        <div class="stage-shade"></div>
+        <p class="stage-caption">تصوّر بصري · يد تمسك حبلاً مرتخياً</p>
       </div>
-      <h2 id="finale-heading" class="finale-headline reveal">
-        في السياسة، من يمدّ لك الحبل طويلاً
-        لا يفعل ذلك دائماً لينقذك.
-        فقد يأتي يوم تكتشف فيه أن
-        <em>الحبل نفسه أصبح يلتف حول عنقك.</em>
-      </h2>
-      <p class="finale-body reveal">
-        التمدد ليس دائماً دليلاً على القوة.
-        الفرق بين القوة الحقيقية والقوة المتوهَّمة أن الأولى تشعل حروباً وتنتهي منها،
-        والثانية تستدرج حروباً لا تستطيع إنهاءها.
-      </p>
+      <div class="steps">
+        <article class="step-card" data-step="0">
+          <h2 id="long-rope-heading">الحبل الطويل</h2>
+          <p>لا تعمل واشنطن بعاطفة.</p>
+        </article>
+        <article class="step-card" data-step="1">
+          <p>حين تترك لقوة إقليمية هامشاً للتمدد، فذلك لأن مصالح الطرفين تتقاطع مرحلياً، أو لأن هذا التمدد يشغل خصوماً مشتركين، أو يثقل القوة المتمددة بأعباء لا تدركها.</p>
+        </article>
+        <article class="step-card" data-step="2">
+          <p>المسافة بين الإذن الضمني والفخ المحكم أقل مما يبدو.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- اقتباس معلّق من النص -->
+    <aside class="column pull reveal" aria-label="اقتباس من التحليل">
+      <blockquote>ربما تقاطعت مصالح الطرفين مرحلياً، ثم تتغير الحسابات، فيتحول ذلك التمدد نفسه إلى عبء ونقطة ضعف.</blockquote>
+    </aside>
+
+    <!-- ذروة التمدد: صورة ثابتة جانبية ونص يتغيّر -->
+    <section class="pinned" id="peak" aria-labelledby="peak-heading" data-pinned>
+      <div class="pinned-media" aria-hidden="true">
+        <div class="pinned-frame">
+          <img src="images/slide-02.jpg" alt="" width="1376" height="768" loading="lazy">
+          <span class="focus-box"></span>
+        </div>
+        <p class="stage-caption">تصوّر بصري · يد مفرودة فوق خريطة قديمة</p>
+        <div class="pinned-progress"><span></span></div>
+      </div>
+      <div class="pinned-text">
+        <h2 id="peak-heading">ذروة التمدد</h2>
+        <div class="pinned-step" data-step="0"><p>على مدى سنوات، وصل قاسم سليماني ورجاله إلى عمق سوريا وقرب الحدود.</p></div>
+        <div class="pinned-step" data-step="1"><p>وتعاظمت قوة حزب الله ونفوذه في لبنان والعراق واليمن.</p></div>
+        <div class="pinned-step" data-step="2"><p>حتى بدت طهران وكأنها تمسك بأوراق المنطقة.</p></div>
+        <div class="pinned-step" data-step="3"><p>وهذا بالضبط هو لحظة الخطر الأكبر: حين تعتقد أنك لا تُمسّ.</p></div>
+      </div>
+    </section>
+
+    <!-- خريطة النفوذ التفاعلية -->
+    <section class="network" id="network" aria-labelledby="network-heading">
+      <div class="column">
+        <h2 id="network-heading" class="reveal">خريطة النفوذ</h2>
+        <p class="reveal">الأطراف والصلات هنا كما وردت في نص التحليل وحده، لا أكثر. اضغط على أي طرف لترى الجملة التي ذكرته.</p>
+        <div class="network-toggle reveal" role="group" aria-label="حال الخريطة">
+          <button type="button" class="is-on" data-state="peak" aria-pressed="true">ذروة التمدد</button>
+          <button type="button" data-state="after" aria-pressed="false">بعد الانقلاب</button>
+        </div>
+      </div>
+      <div class="network-wrap reveal" data-net="peak">
+        <svg class="net-svg" viewBox="0 0 900 560" role="img" aria-labelledby="net-title net-desc">
+          <title id="net-title">خريطة النفوذ كما يرسمها النص</title>
+          <desc id="net-desc">واشنطن تترك الحبل لطهران، وطهران تمدّ شبكتها عبر قاسم سليماني ورجاله إلى سوريا، وعبر حزب الله إلى لبنان والعراق واليمن. بعد الانقلاب: ضربة أمريكية تقتل سليماني، وقادة الحزب يُقتلون، وطهران في مواجهة مباشرة.</desc>
+
+          <g class="edges">
+            <path class="edge edge-rope" d="M150 110 C 300 110, 360 250, 450 270"/>
+            <path class="edge edge-net" d="M450 270 L 250 360"/>
+            <path class="edge edge-net" d="M450 270 L 650 360"/>
+            <path class="edge edge-net" d="M250 360 L 150 480"/>
+            <path class="edge edge-net" d="M650 360 L 560 490"/>
+            <path class="edge edge-net" d="M650 360 L 700 500"/>
+            <path class="edge edge-net" d="M650 360 L 820 470"/>
+            <path class="edge edge-strike" d="M150 110 C 170 230, 200 300, 250 360"/>
+            <path class="edge edge-clash" d="M150 110 L 450 270"/>
+          </g>
+
+          <g class="edge-labels">
+            <text class="elabel elabel-rope" x="345" y="150">الحبل الطويل</text>
+            <text class="elabel elabel-strike" x="95" y="250">ضربة أمريكية</text>
+            <text class="elabel elabel-clash" x="300" y="160">مواجهة مباشرة</text>
+          </g>
+
+          <g class="node" data-node="washington" tabindex="0" role="button" aria-label="واشنطن" transform="translate(150 110)">
+            <circle r="40"/><text y="6">واشنطن</text>
+          </g>
+          <g class="node node-core" data-node="tehran" tabindex="0" role="button" aria-label="طهران" transform="translate(450 270)">
+            <circle r="52"/><text y="7">طهران</text>
+          </g>
+          <g class="node" data-node="soleimani" tabindex="0" role="button" aria-label="قاسم سليماني ورجاله" transform="translate(250 360)">
+            <circle r="44"/><text y="-2">سليماني</text><text class="sub" y="18">ورجاله</text><g class="strike-badge" transform="translate(32 -32)"><circle r="13"/><path d="M-5 -5 L5 5 M5 -5 L-5 5"/></g>
+          </g>
+          <g class="node" data-node="hezbollah" tabindex="0" role="button" aria-label="حزب الله" transform="translate(650 360)">
+            <circle r="44"/><text y="6">حزب الله</text><g class="strike-badge" transform="translate(32 -32)"><circle r="13"/><path d="M-5 -5 L5 5 M5 -5 L-5 5"/></g>
+          </g>
+          <g class="node node-place" data-node="syria" tabindex="0" role="button" aria-label="سوريا" transform="translate(150 480)">
+            <circle r="32"/><text y="6">سوريا</text>
+          </g>
+          <g class="node node-place" data-node="lebanon" tabindex="0" role="button" aria-label="لبنان" transform="translate(560 490)">
+            <circle r="32"/><text y="6">لبنان</text>
+          </g>
+          <g class="node node-place" data-node="iraq" tabindex="0" role="button" aria-label="العراق" transform="translate(700 500)">
+            <circle r="32"/><text y="6">العراق</text>
+          </g>
+          <g class="node node-place" data-node="yemen" tabindex="0" role="button" aria-label="اليمن" transform="translate(820 470)">
+            <circle r="32"/><text y="6">اليمن</text>
+          </g>
+        </svg>
+        <ul class="net-legend">
+          <li><span class="sw sw-rope"></span>الحبل الطويل</li>
+          <li><span class="sw sw-net"></span>شبكة النفوذ</li>
+          <li><span class="sw sw-red"></span>ضربة أو مواجهة</li>
+        </ul>
+        <div class="net-panel" id="net-panel" aria-live="polite">
+          <p class="net-panel-name" id="net-panel-name">طهران</p>
+          <p class="net-panel-quote" id="net-panel-quote">حتى بدت طهران وكأنها تمسك بأوراق المنطقة.</p>
+          <p class="net-panel-src">من نص التحليل</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- انقلاب المعادلة -->
+    <section class="scrolly" id="reversal" aria-labelledby="reversal-heading" data-scrolly>
+      <div class="stage" aria-hidden="true">
+        <div class="stage-layer is-active" data-layer="0"><img src="images/slide-03.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-wide"></div>
+        <div class="stage-layer" data-layer="1"><img src="images/slide-03.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-king"></div>
+        <div class="stage-layer" data-layer="2"><img src="images/slide-03.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-king-close"></div>
+        <div class="stage-layer" data-layer="3"><img src="images/slide-03.jpg" alt="" width="1376" height="768" loading="lazy" class="frame-dark"></div>
+        <div class="stage-shade"></div>
+        <p class="stage-caption">تصوّر بصري · ملك الشطرنج ساقطاً</p>
+      </div>
+      <div class="steps">
+        <article class="step-card" data-step="0">
+          <h2 id="reversal-heading">انقلاب المعادلة</h2>
+          <p>ثم انقلبت المعادلة.</p>
+        </article>
+        <article class="step-card" data-step="1">
+          <p>قُتل سليماني بضربة أمريكية<a class="ref" href="#src-1" aria-label="المصدر ١">١</a>، وقُتل نصرالله وعدد كبير من قادة الحزب بضربات متتالية<a class="ref" href="#src-2" aria-label="المصدر ٢">٢</a>.</p>
+        </article>
+        <article class="step-card" data-step="2">
+          <p>اليوم تجد إيران نفسها في مواجهة مباشرة، بينما تتعرض شبكة نفوذها لضربات قاسية.</p>
+        </article>
+        <article class="step-card" data-step="3">
+          <p class="strong">التمدد لم يكن قوة. كان انكشافاً منظّماً.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- الخلاصة: الحبل يُحكَم -->
+    <section class="finale" id="finale" aria-labelledby="finale-heading">
+      <div class="finale-media" aria-hidden="true">
+        <img src="images/slide-04.jpg" alt="" width="1376" height="768" loading="lazy" id="coil">
+      </div>
+      <div class="finale-shade" aria-hidden="true"></div>
+      <div class="column finale-text">
+        <h2 id="finale-heading" class="reveal">في السياسة، من يمدّ لك الحبل طويلاً لا يفعل ذلك دائماً لينقذك. فقد يأتي يوم تكتشف فيه أن الحبل نفسه أصبح يلتف حول عنقك.</h2>
+        <p class="reveal">التمدد ليس دائماً دليلاً على القوة. الفرق بين القوة الحقيقية والقوة المتوهَّمة أن الأولى تشعل حروباً وتنتهي منها، والثانية تستدرج حروباً لا تستطيع إنهاءها.</p>
+        <p class="stage-caption finale-caption">تصوّر بصري · حبل ملفوف على هيئة حلقة</p>
+      </div>
+    </section>
+
+    <!-- المنهج والمصادر -->
+    <section class="column method" id="method" aria-labelledby="method-heading">
+      <h2 id="method-heading" class="reveal">المنهج والمصادر</h2>
+      <p class="reveal">هذه قراءة تحليلية كتبها خلدون عكرمة، لا تحقيق بوثائق. الصور تصوّر بصري مولَّد يحمل الفكرة ولا يوثّق حدثاً. وخريطة النفوذ ترسم الأطراف والصلات كما وردت في النص وحده.</p>
+      <ol class="sources reveal">
+        <li id="src-1"><span class="src-claim">مقتل قاسم سليماني بضربة أمريكية.</span> <a href="https://www.defense.gov/News/Releases/Release/Article/2049534/statement-by-the-department-of-defense/" target="_blank" rel="noopener noreferrer">بيان وزارة الدفاع الأمريكية، 2 كانون الثاني 2020</a></li>
+        <li id="src-2"><span class="src-claim">مقتل نصرالله وعدد كبير من قادة حزب الله بضربات متتالية.</span> <a href="https://www.aljazeera.com/news/2024/9/28/hassan-nasrallah-hezbollah-leader-killed-in-beirut-in-israeli-strike" target="_blank" rel="noopener noreferrer">الجزيرة: مقتل نصرالله بغارة إسرائيلية على بيروت، وتأكيد حزب الله، 28 أيلول 2024</a>، و<a href="https://www.aljazeera.com/news/2024/9/28/list-of-hezbollah-hamas-iran-leaders-killed-by-israel-in-recent-months" target="_blank" rel="noopener noreferrer">الجزيرة: قادة حزب الله الذين قُتلوا في الأشهر السابقة</a></li>
+        <li id="src-3"><span class="src-claim">التحليل وخلاصته.</span> نص خلدون عكرمة، 2026.</li>
+      </ol>
     </section>
 
     <!-- المشاركة -->
-    <section id="share-section" aria-labelledby="share-heading">
-      <h2 id="share-heading" class="share-heading">شارك هذا التحليل</h2>
+    <section class="column share" id="share" aria-labelledby="share-heading">
+      <h2 id="share-heading">شارك هذا التحليل</h2>
       <div class="share-buttons" role="group" aria-label="أزرار المشاركة">
-        <button id="btn-share-native" class="share-btn" aria-label="مشاركة عبر تطبيقات الجهاز">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="18" cy="5" r="3"></circle>
-            <circle cx="6" cy="12" r="3"></circle>
-            <circle cx="18" cy="19" r="3"></circle>
-            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-          </svg>
+        <button id="btn-share-native" class="share-btn" type="button" aria-label="مشاركة عبر تطبيقات الجهاز">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
           مشاركة
         </button>
-        <a
-          href="https://wa.me/?text=%D9%83%D9%8A%D9%81%20%D9%88%D9%82%D8%B9%D8%AA%20%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83%20%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9%20https%3A%2F%2Fkakramah.github.io%2Fmiddle-east-power-trap%2F"
-          class="share-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="مشاركة عبر واتساب"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          واتساب
-        </a>
-        <a
-          href="https://twitter.com/intent/tweet?text=%D9%83%D9%8A%D9%81%20%D9%88%D9%82%D8%B9%D8%AA%20%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83%20%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9&url=https%3A%2F%2Fkakramah.github.io%2Fmiddle-east-power-trap%2F"
-          class="share-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="مشاركة عبر منصة إكس"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.745l7.73-8.835L1.254 2.25H8.08l4.261 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-          </svg>
-          إكس
-        </a>
-        <button id="btn-copy" class="share-btn" aria-label="نسخ رابط الصفحة">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-          </svg>
-          نسخ الرابط
-        </button>
+        <a class="share-btn" href="https://wa.me/?text=%D9%83%D9%8A%D9%81%20%D9%88%D9%82%D8%B9%D8%AA%20%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83%20%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9%20https%3A%2F%2Fkakramah.github.io%2Fmiddle-east-power-trap%2F" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر واتساب">واتساب</a>
+        <a class="share-btn" href="https://t.me/share/url?url=https%3A%2F%2Fkakramah.github.io%2Fmiddle-east-power-trap%2F&amp;text=%D9%83%D9%8A%D9%81%20%D9%88%D9%82%D8%B9%D8%AA%20%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83%20%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر تلغرام">تلغرام</a>
+        <a class="share-btn" href="https://twitter.com/intent/tweet?text=%D9%83%D9%8A%D9%81%20%D9%88%D9%82%D8%B9%D8%AA%20%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83%20%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9&amp;url=https%3A%2F%2Fkakramah.github.io%2Fmiddle-east-power-trap%2F" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر منصة إكس">إكس</a>
+        <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkakramah.github.io%2Fmiddle-east-power-trap%2F" target="_blank" rel="noopener noreferrer" aria-label="مشاركة عبر فيسبوك">فيسبوك</a>
+        <button id="btn-copy" class="share-btn" type="button" aria-label="نسخ رابط الصفحة">نسخ الرابط</button>
       </div>
       <p id="share-confirm" class="share-confirm" aria-live="polite"></p>
     </section>
 
   </main>
 
-  <!-- الذيل -->
-  <footer id="footer-section" aria-label="تذييل الصفحة">
-    <div class="footer-inner">
-      <img
-        src="images/eagle-emblem-metal.svg"
-        alt="شعار خلدون عكرمة"
-        class="footer-eagle"
-        width="56"
-        height="43"
-      >
-      <h2 class="footer-contact-title">تواصل مع خلدون</h2>
-      <p class="footer-contact-sub">ملاحظة، تعقيب، أو سؤال.</p>
-
-      <form
-        id="contact-form"
-        class="contact-form"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        aria-label="نموذج التواصل"
-        novalidate
-      >
+  <!-- الذيل: النموذج والهوية كتلة واحدة -->
+  <footer class="site-footer" aria-label="تذييل الصفحة">
+    <div class="footer-card">
+      <img src="images/eagle-emblem-metal.svg" alt="شعار خلدون عكرمة" class="footer-eagle" width="72" height="54">
+      <h2 class="footer-title">تواصل مع خلدون</h2>
+      <p class="footer-sub">ملاحظة، تعقيب، أو سؤال.</p>
+      <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
         <input type="hidden" name="access_key" value="2527772c-69c7-4bd9-9319-a5b705e44bac">
         <input type="hidden" name="subject" value="تعقيب: كيف وقعت إيران في الشباك الأمريكية">
         <input type="checkbox" name="botcheck" class="bot-trap" tabindex="-1" aria-hidden="true">
-
-        <input
-          type="text"
-          name="name"
-          id="contact-name"
-          placeholder="الاسم"
-          required
-          autocomplete="name"
-          aria-label="الاسم الكريم"
-        >
-        <input
-          type="email"
-          name="email"
-          id="contact-email"
-          placeholder="البريد الإلكتروني"
-          required
-          autocomplete="email"
-          aria-label="البريد الإلكتروني"
-        >
-        <textarea
-          name="message"
-          id="contact-message"
-          placeholder="رسالتك"
-          required
-          aria-label="نص الرسالة"
-        ></textarea>
-
-        <button type="submit" class="contact-submit" id="contact-submit-btn">
-          أرسل تعقيبك
-        </button>
+        <label class="sr-only" for="contact-name">الاسم</label>
+        <input type="text" name="name" id="contact-name" placeholder="الاسم" required autocomplete="name">
+        <label class="sr-only" for="contact-email">البريد الإلكتروني</label>
+        <input type="email" name="email" id="contact-email" placeholder="البريد الإلكتروني" required autocomplete="email">
+        <label class="sr-only" for="contact-message">رسالتك</label>
+        <textarea name="message" id="contact-message" rows="3" placeholder="رسالتك" required></textarea>
+        <button type="submit" class="contact-submit" id="contact-submit">أرسل تعقيبك</button>
         <p class="form-feedback success-message" id="form-feedback" aria-live="polite"></p>
       </form>
-
+      <p class="footer-sig" dir="ltr">جميع الحقوق محفوظة &copy; 2026 &middot; 𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓴𝓻𝓪𝓶𝓪𝓱</p>
       <nav class="footer-socials" aria-label="وسائل التواصل">
-        <a
-          href="https://wa.me/966566702030"
-          class="social-icon"
-          aria-label="واتساب"
-          title="واتساب"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
+        <a href="https://wa.me/966566702030" class="social-icon" aria-label="واتساب" title="واتساب" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </a>
-        <a
-          href="https://instagram.com/khaldounakramah"
-          class="social-icon"
-          aria-label="إنستغرام"
-          title="إنستغرام"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
+        <a href="https://instagram.com/khaldounakramah" class="social-icon" aria-label="إنستغرام" title="إنستغرام" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
         </a>
-        <a
-          href="mailto:akramahkhaldoun@gmail.com"
-          class="social-icon"
-          aria-label="البريد الإلكتروني"
-          title="البريد الإلكتروني"
-        >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
+        <a href="mailto:akramahkhaldoun@gmail.com" class="social-icon" aria-label="البريد" title="البريد">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
         </a>
       </nav>
-
-      <p class="footer-copy" dir="ltr">
-        جميع الحقوق محفوظة &copy; 2026 &middot; 𝓚𝓱𝓪𝓵𝓭𝓸𝓾𝓷𝓐𝓴𝓻𝓪𝓶𝓪𝓱
-      </p>
     </div>
   </footer>
 
-  <!-- سطر مخفي للشاشات المساعدة -->
-  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}</style>
+  <!-- زر الدرج العائم -->
+  <button class="drawer-fab" type="button" data-open-drawer aria-controls="drawer" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span>الخرائط والمراجع</span>
+  </button>
+
+  <!-- درج الخرائط والمراجع -->
+  <aside class="drawer" id="drawer" aria-label="الخرائط والمراجع" aria-hidden="true" inert>
+    <div class="drawer-head">
+      <h2>الخرائط والمراجع</h2>
+      <button type="button" class="drawer-close" data-close-drawer aria-label="أغلق الدرج">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="drawer-grid">
+      <li>
+        <button type="button" class="drawer-item" data-gallery="0" data-title="يد تمسك حبلاً مرتخياً" data-desc="الحبل يبدو هدية في أوله. تصوّر بصري مولَّد يحمل فكرة الإمداد، لا وثيقة.">
+          <img src="images/slide-01.jpg" alt="يد تمسك حبلاً مرتخياً في مساحة داكنة" width="1376" height="768" loading="lazy">
+          <span class="item-tag">تصوّر بصري</span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="drawer-item" data-gallery="1" data-title="يد مفرودة فوق خريطة قديمة" data-desc="وهم القبضة على المنطقة. تصوّر بصري مولَّد، والخريطة فيه ليست مرجعاً جغرافياً.">
+          <img src="images/slide-02.jpg" alt="يد مفرودة فوق خريطة قديمة للشرق الأوسط" width="1376" height="768" loading="lazy">
+          <span class="item-tag">تصوّر بصري</span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="drawer-item" data-gallery="2" data-title="ملك الشطرنج ساقطاً" data-desc="القوة الظاهرة حين تسقط دفعة واحدة. تصوّر بصري مولَّد.">
+          <img src="images/slide-03.jpg" alt="ملك شطرنج ساقط على سطح حجري داكن" width="1376" height="768" loading="lazy">
+          <span class="item-tag">تصوّر بصري</span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="drawer-item" data-gallery="3" data-title="حبل ملفوف على هيئة حلقة" data-desc="الحبل نفسه وقد صار حلقة. تصوّر بصري مولَّد.">
+          <img src="images/slide-04.jpg" alt="حبل ملفوف على هيئة حلقة في مساحة داكنة" width="1376" height="768" loading="lazy">
+          <span class="item-tag">تصوّر بصري</span>
+        </button>
+      </li>
+      <li class="wide">
+        <a class="drawer-link" href="#network" data-close-drawer>
+          <span class="item-tag">خريطة</span>
+          <strong>خريطة النفوذ كما يرسمها النص</strong>
+        </a>
+      </li>
+      <li class="wide">
+        <a class="drawer-link" href="#method" data-close-drawer>
+          <span class="item-tag">مرجع</span>
+          <strong>المنهج والمصادر</strong>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <div class="drawer-backdrop" data-close-drawer hidden></div>
+
+  <!-- عارض الصور -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+    <button type="button" class="lb-close" aria-label="أغلق العارض"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button type="button" class="lb-prev" aria-label="الصورة السابقة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    <figure class="lb-figure">
+      <img id="lb-img" src="images/slide-01.jpg" alt="" width="1376" height="768">
+      <figcaption><strong id="lb-title"></strong><span id="lb-desc"></span></figcaption>
+    </figure>
+    <button type="button" class="lb-next" aria-label="الصورة التالية"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  </div>
 
   <script src="script.js"></script>
 </body>
