@@ -105,14 +105,17 @@ if (contactForm) {
       .then(function(res) { return res.json(); })
       .then(function(data) {
         if (data.success) {
+          formFeedback.className = 'form-feedback success-message';
           formFeedback.textContent = 'وصلت رسالتك. شكراً.';
           contactForm.reset();
           lastSubmitTime = Date.now();
         } else {
+          formFeedback.className = 'form-feedback';
           formFeedback.textContent = 'حدث خطأ. حاول مرة أخرى.';
         }
       })
       .catch(function() {
+        formFeedback.className = 'form-feedback';
         formFeedback.textContent = 'تعذّر الاتصال. تحقق من الإنترنت.';
       })
       .finally(function() {
@@ -120,6 +123,25 @@ if (contactForm) {
       });
   });
 }
+
+/* ─── التنقل بالأسهم بين المشاهد ────────────────────────── */
+var scenes = document.querySelectorAll('.scene-block, #finale, #hero');
+var currentSceneIndex = 0;
+
+document.addEventListener('keydown', function(e) {
+  if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+    if (currentSceneIndex < scenes.length - 1) {
+      currentSceneIndex++;
+      scenes[currentSceneIndex].scrollIntoView({ behavior: 'smooth' });
+    }
+  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+    if (currentSceneIndex > 0) {
+      currentSceneIndex--;
+      scenes[currentSceneIndex].scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
 
 /* ─── تجميع أحداث التمرير ─────────────────────────────────── */
 var ticking = false;
