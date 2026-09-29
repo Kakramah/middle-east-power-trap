@@ -1,6 +1,8 @@
 /* script.js · middle-east-power-trap */
 'use strict';
 
+document.documentElement.classList.add('js');
+
 var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var isPhone = function () { return window.matchMedia('(max-width: 767px)').matches; };
 
@@ -55,12 +57,17 @@ document.querySelectorAll('.reveal').forEach(function (el) { revealObs.observe(e
 document.querySelectorAll('[data-scrolly]').forEach(function (section) {
   var layers = section.querySelectorAll('.stage-layer');
   var cards = section.querySelectorAll('.step-card');
+  var caption = section.querySelector('.stage-caption');
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (!e.isIntersecting) return;
       var i = Number(e.target.dataset.step);
       cards.forEach(function (c) { c.classList.toggle('is-active', c === e.target); });
-      layers.forEach(function (l) { l.classList.toggle('is-active', Number(l.dataset.layer) === i); });
+      layers.forEach(function (l) {
+        var active = Number(l.dataset.layer) === i;
+        l.classList.toggle('is-active', active);
+        if (active && caption) caption.textContent = l.dataset.caption || '';
+      });
     });
   }, { rootMargin: '-45% 0px -45% 0px' });
   cards.forEach(function (c) { obs.observe(c); });

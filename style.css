@@ -147,25 +147,23 @@ svg { width: 1em; height: 1em; }
 .stage-shade { position: absolute; inset: 0; background: linear-gradient(to left, rgba(14, 16, 18, .78), rgba(14, 16, 18, .18) 55%, rgba(14, 16, 18, .35)); }
 .stage-caption { position: absolute; bottom: 22px; left: 40px; font-size: 14px; color: var(--text-muted); z-index: 2; }
 
-/* أطر الطبقات: الصورة نفسها بلقطات مختلفة */
+/* حركة لطيفة داخل المشاهد البصرية المتعاقبة */
 .frame-wide { transform: scale(1); }
-.frame-hand { transform: scale(1.55); transform-origin: 30% 12%; }
-.frame-loop { transform: scale(1.9); transform-origin: 32% 62%; }
-.frame-king { transform: scale(1.45); transform-origin: 48% 58%; }
-.frame-king-close { transform: scale(2.2); transform-origin: 44% 60%; }
 .frame-dark { transform: scale(1.2); filter: brightness(.45) saturate(.6); }
 .stage-layer.is-active .frame-wide { transform: scale(1.06); }
+.mobile-step-visual { display: none; }
 
 .steps { position: relative; margin-top: -100vh; margin-top: -100svh; padding: 50vh 0 60vh; z-index: 3; pointer-events: none; }
 .step-card {
   width: var(--scene-card-w); margin: 0 max(40px, calc((100vw - 1180px) / 2)) 70vh auto;
   margin-inline-start: max(40px, calc((100vw - 1180px) / 2)); margin-inline-end: auto;
   padding: 34px 38px 36px; background: var(--scene-card); backdrop-filter: blur(6px);
-  pointer-events: auto; opacity: .35; transform: translateY(24px);
+  pointer-events: auto; opacity: 1; transform: translateY(24px);
   transition: opacity .6s var(--ease), transform .6s var(--ease);
 }
+.js .step-card { opacity: .35; }
 .step-card:last-child { margin-bottom: 0; }
-.step-card.is-active { opacity: 1; transform: none; }
+.js .step-card.is-active { opacity: 1; transform: none; }
 .step-card h2 { font-size: 39.75px; line-height: 1.35; margin-bottom: 18px; }
 .step-card h2::after { content: ""; display: block; width: 48px; height: 4px; margin-top: 16px; background: var(--accent); }
 .step-card p { font-size: 24px; line-height: 44.4px; }
@@ -367,12 +365,16 @@ svg { width: 1em; height: 1em; }
   .pull { padding-top: 60px; padding-bottom: 80px; }
   .pull blockquote { font-size: 26px; }
 
-  .stage { position: relative; height: 62vh; }
-  .stage-layer { opacity: 1; }
-  .stage-layer:not([data-layer="0"]) { display: none; }
-  .stage-caption { left: 20px; }
-  .steps { margin-top: 0; padding: 8px 0 72px; }
-  .step-card { width: auto; margin: 0 16px 16px; opacity: 1; transform: none; background: var(--surface); backdrop-filter: none; padding: 26px 22px; }
+  .stage { display: none; }
+  .steps { margin-top: 0; padding: 0 0 72px; }
+  .step-card { width: auto; margin: 0 0 64px; opacity: 1; transform: none; background: transparent; backdrop-filter: none; padding: 0 0 8px; }
+  .js .step-card { opacity: 1; }
+  .step-card:last-child { margin-bottom: 0; }
+  .mobile-step-visual { display: block; margin: 0 0 24px; }
+  .mobile-step-visual img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+  .mobile-step-visual-dark img { filter: brightness(.45) saturate(.6); }
+  .mobile-step-visual figcaption { padding: 8px 20px 0; color: var(--text-muted); font-size: 13px; line-height: 1.5; }
+  .step-card > h2, .step-card > p { margin-inline: 20px; }
   .step-card h2, .pinned-text h2, .network h2, .method h2, .share h2 { font-size: 32px; }
 
   .pinned { grid-template-columns: 1fr; gap: 20px; padding: 72px 16px; }
@@ -401,7 +403,7 @@ svg { width: 1em; height: 1em; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
   .hero-media img { transform: none; }
-  .step-card { opacity: 1; transform: none; }
+  .js .step-card { opacity: 1; transform: none; }
   .finale-media img { transform: none !important; }
   .hero-scroll span { display: none; }
 }
